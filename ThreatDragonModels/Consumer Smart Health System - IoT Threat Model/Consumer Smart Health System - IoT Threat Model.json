@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "13a03be9-83ba-443f-9715-bbf050716d32",
             "zIndex": -1,
+            "id": "13a03be9-83ba-443f-9715-bbf050716d32",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -65,6 +65,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -148,7 +149,6 @@
               ]
             },
             "id": "d12f90b9-b9a9-476a-b6cb-139807c260b4",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Patient / User",
@@ -182,6 +182,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -265,7 +266,6 @@
               ]
             },
             "id": "f1e1c30c-f205-4789-80ba-e0f7bd5eb9c1",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Mobile App",
@@ -302,6 +302,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -385,7 +386,6 @@
               ]
             },
             "id": "67ad413a-4ba1-4f25-ba09-44779fce2719",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Pill Dispenser",
@@ -425,6 +425,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -508,7 +509,6 @@
               ]
             },
             "id": "36b31aac-c32b-41e7-93bd-2997f37493dd",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Cloud Database (PHI)",
@@ -575,7 +575,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -596,13 +597,45 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "ab488427-e024-440c-a808-732397b135af",
+                  "title": "PHI Data Interception via MQTT",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Personal Health Information transmitted via MQTT can be intercepted if TLS certificate validation is not enforced on the mobile.",
+                  "mitigation": "Enforce mutual TLS authentication. Validate server certificates. Implement certificate pinning on mobile app.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "915822fb-4a19-47f5-8408-dc66e49826e8",
+                  "title": "MQTT Broker Denial of Service",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Attacker floods MQTT broker with malformed packets causing service unavailability and loss of health monitoring.",
+                  "mitigation": "Implement MQTT rate limiting, authentication and access control lists on the broker.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
             },
             "labels": [
               "MQTT over TLS"
@@ -618,10 +651,28 @@
             },
             "vertices": [
               {
+                "x": 660,
+                "y": 192
+              },
+              {
+                "x": 690,
+                "y": 192
+              },
+              {
                 "x": 810,
                 "y": 167
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -716,16 +767,6 @@
               "cell": "67ad413a-4ba1-4f25-ba09-44779fce2719",
               "port": "85a12d75-8ef5-4aec-bbf9-b7c0782e0f62"
             },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 420
-              },
-              {
-                "x": 490,
-                "y": 420
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -735,13 +776,23 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 420
+              },
+              {
+                "x": 490,
+                "y": 420
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 5
   }
 }
