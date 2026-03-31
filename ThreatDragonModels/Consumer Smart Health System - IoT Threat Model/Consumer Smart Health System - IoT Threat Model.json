@@ -16,11 +16,732 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.1-RC1",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 520,
+              "y": 320
+            },
+            "size": {
+              "width": 160,
+              "height": 130
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "13a03be9-83ba-443f-9715-bbf050716d32",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "1245ef6e-fc8e-4d16-a349-9ba7983b696d"
+              ],
+              "containedElements": [
+                "67ad413a-4ba1-4f25-ba09-44779fce2719"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 30,
+              "y": 227
+            },
+            "size": {
+              "width": 160,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient / User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a57f0cb2-c6c4-4874-9e72-b0e688d36c59"
+                },
+                {
+                  "group": "right",
+                  "id": "5afb5b09-641d-49e0-8568-f9b295bc83fe"
+                },
+                {
+                  "group": "bottom",
+                  "id": "66c40bc2-381b-4e8f-aff1-c3731866ce2f"
+                },
+                {
+                  "group": "left",
+                  "id": "406dbd2a-c298-4294-aa8b-b56a220c64d0"
+                }
+              ]
+            },
+            "id": "d12f90b9-b9a9-476a-b6cb-139807c260b4",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Patient / User",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 280,
+              "y": 290
+            },
+            "size": {
+              "width": 120,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Mobile App"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b76034ca-f644-4863-bb2e-aa1d5aa7568f"
+                },
+                {
+                  "group": "right",
+                  "id": "95b4c4b1-c948-4fca-980f-35f5f95a5ab2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "85a12d75-8ef5-4aec-bbf9-b7c0782e0f62"
+                },
+                {
+                  "group": "left",
+                  "id": "528a166d-c3cd-4fcf-adf0-a00313d1c536"
+                }
+              ]
+            },
+            "id": "f1e1c30c-f205-4789-80ba-e0f7bd5eb9c1",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Mobile App",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 520,
+              "y": 330
+            },
+            "size": {
+              "width": 160,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Pill Dispenser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b76034ca-f644-4863-bb2e-aa1d5aa7568f"
+                },
+                {
+                  "group": "right",
+                  "id": "95b4c4b1-c948-4fca-980f-35f5f95a5ab2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "85a12d75-8ef5-4aec-bbf9-b7c0782e0f62"
+                },
+                {
+                  "group": "left",
+                  "id": "528a166d-c3cd-4fcf-adf0-a00313d1c536"
+                }
+              ]
+            },
+            "id": "67ad413a-4ba1-4f25-ba09-44779fce2719",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Pill Dispenser",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 893,
+              "y": 192
+            },
+            "size": {
+              "width": 200,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Cloud Database (PHI)"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b9963ba2-3e6d-43bb-9a85-667d21b6534d"
+                },
+                {
+                  "group": "right",
+                  "id": "6d7642e2-93db-4f25-9d62-26516866d523"
+                },
+                {
+                  "group": "bottom",
+                  "id": "c502d842-8763-4148-bb4c-fba0a34ebf98"
+                },
+                {
+                  "group": "left",
+                  "id": "74b99fe3-0a56-42e5-8e25-836c3e077093"
+                }
+              ]
+            },
+            "id": "36b31aac-c32b-41e7-93bd-2997f37493dd",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "Cloud Database (PHI)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Interaction",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User Interaction"
+            ],
+            "id": "cd76cebc-5cfa-4054-8d77-c67bacffa114",
+            "source": {
+              "x": 190,
+              "y": 247
+            },
+            "target": {
+              "x": 290,
+              "y": 347
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "MQTT over TLS",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "MQTT over TLS"
+            ],
+            "id": "1ae9451e-3f95-4b15-bacc-43fbb49c31af",
+            "source": {
+              "x": 340,
+              "y": 290
+            },
+            "target": {
+              "cell": "36b31aac-c32b-41e7-93bd-2997f37493dd",
+              "port": "b9963ba2-3e6d-43bb-9a85-667d21b6534d"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 167
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "BLE (Bluetooth Low Energy)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4d0bde58-1f59-4125-930d-faee531a433d",
+                  "title": "BLE Device Spoofing Attack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker can spoof the BLE identity of the pill dispenser to intercept medication data or send false commands to the mobile app.",
+                  "mitigation": "Implement BLE pairing with Out-of-Band verification and certificate-based device authentication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "dddb5519-16e3-4121-8592-5d1388118dec",
+                  "title": "BLE Eavesdropping - Health Data Exposed",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unencrypted BLE traffic intercepted by nearby attacker using BLE sniffer to capture personal health data.",
+                  "mitigation": "Enforce BLE payload encryption. Apply TLS over BLE data channel.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "1eb02007-b980-4e37-8848-50ae0e313081",
+                  "title": "Battery Drain Denial of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attacker floods BLE interface with connection requests causing battery exhaustion on pill dispenser.",
+                  "mitigation": "Implement BLE connection rate limiting and anomaly detection.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "13a03be9-83ba-443f-9715-bbf050716d32"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "BLE (Bluetooth Low Energy)"
+            ],
+            "id": "1245ef6e-fc8e-4d16-a349-9ba7983b696d",
+            "source": {
+              "x": 349,
+              "y": 400
+            },
+            "target": {
+              "cell": "67ad413a-4ba1-4f25-ba09-44779fce2719",
+              "port": "85a12d75-8ef5-4aec-bbf9-b7c0782e0f62"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 420
+              },
+              {
+                "x": 490,
+                "y": 420
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 3
   }
 }
