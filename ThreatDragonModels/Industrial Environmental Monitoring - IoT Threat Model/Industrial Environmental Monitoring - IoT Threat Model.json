@@ -1,0 +1,27 @@
+{
+  "version": "2.6.1-RC1",
+  "summary": {
+    "title": "Industrial Environmental Monitoring - IoT Threat Model",
+    "owner": "Security Researcher",
+    "description": "Factory sensors communicating via MQTT to edge gateway, connected via CoAP to cloud SCADA platform monitoring temperature, humidity and air quality.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Industrial Monitoring DFD",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": [],
+        "description": "Industrial Monitoring DFD"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
