@@ -1,0 +1,26 @@
+{
+  "version": "2.6.1-RC1",
+  "summary": {
+    "title": "Consumer Smart Health System - IoT Threat Model",
+    "owner": "Security Researcher",
+    "description": "Smart pill dispenser communicating via BLE to mobile app, connected via MQTT to cloud backend storing personal health information (PHI).",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Smart Health System DFD",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
